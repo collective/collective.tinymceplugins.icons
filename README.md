@@ -2,6 +2,7 @@
     <h1 align="center">collective.tinymceplugins.icons</h1>
 </div>
 <div align="center">
+
 [![PyPI](https://img.shields.io/pypi/v/collective.tinymceplugins.icons)](https://pypi.org/project/collective.tinymceplugins.icons/)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/collective.tinymceplugins.icons)](https://pypi.org/project/collective.tinymceplugins.icons/)
 [![PyPI - Wheel](https://img.shields.io/pypi/wheel/collective.tinymceplugins.icons)](https://pypi.org/project/collective.tinymceplugins.icons/)
