@@ -1,0 +1,14 @@
+{
+    "title": "collective.tinymceplugins.icons",
+    "description": "A TinyMCE plugin that lets the end-user insert icons registered in Plone as part of the text",
+    "author": "Mikel Larreategi",
+    "email": "mlarreategi@codesyntax.com",
+    "github_organization": "collective",
+    "use_prerelease_versions": "No",
+    "plone_version": "6.2.2",
+    "python_package_name": "collective.tinymceplugins.icons",
+    "feature_headless": false,
+    "initialize_ci": true,
+    "initialize_documentation": false,
+    "__template__": "backend_addon"
+}
