@@ -1,8 +1,8 @@
+from .interfaces import IBrowserLayer
 from bs4 import BeautifulSoup
 from plone.outputfilters.interfaces import IFilter
 from zope.component import getMultiAdapter
 from zope.interface import implementer
-from .interfaces import IBrowserLayer
 
 
 @implementer(IFilter)

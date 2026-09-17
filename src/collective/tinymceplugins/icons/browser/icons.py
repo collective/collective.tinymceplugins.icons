@@ -1,7 +1,8 @@
-import json
 from Products.Five import BrowserView
 from zope.component import getUtility
 from zope.schema.interfaces import IVocabularyFactory
+
+import json
 
 
 class IconsJsonView(BrowserView):

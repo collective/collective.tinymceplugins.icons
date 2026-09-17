@@ -16,7 +16,10 @@
   </records>
 
   <!-- HTML Filter settings to allow SVGs -->
-  <record name="plone.valid_tags" interface="plone.base.interfaces.controlpanel.IFilterSchema" field="valid_tags">
+  <record field="valid_tags"
+          interface="plone.base.interfaces.controlpanel.IFilterSchema"
+          name="plone.valid_tags"
+  >
     <value purge="False">
       <element>svg</element>
       <element>g</element>
@@ -33,7 +36,10 @@
     </value>
   </record>
 
-  <record name="plone.custom_attributes" interface="plone.base.interfaces.controlpanel.IFilterSchema" field="custom_attributes">
+  <record field="custom_attributes"
+          interface="plone.base.interfaces.controlpanel.IFilterSchema"
+          name="plone.custom_attributes"
+  >
     <value purge="False">
       <element>viewbox</element>
       <element>xmlns</element>
