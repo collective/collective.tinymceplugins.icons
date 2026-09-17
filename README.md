@@ -23,7 +23,14 @@ A TinyMCE plugin that lets the end-user insert icons registered in Plone as part
 
 ## Features
 
-TODO: List our awesome features
+- **TinyMCE Plugin**: A native TinyMCE plugin to browse and insert icons.
+- **Icon Discovery**: Automatically discovers icons registered in the Plone registry (`plone.icon.*`).
+- **Searchable Grid**: Search and live-filter icons in a visual grid within the editor dialog.
+- **Live Preview**: Icons are inserted as `<img>` tags pointing to `@@iconresolver`, providing an immediate visual representation while editing.
+- **Inline SVGs**: A global `plone.outputfilter` automatically transforms the placeholders into high-quality inline SVGs in the final page rendering.
+- **HTML Filter Support**: Automatically configures the Plone HTML filter to allow SVG tags and attributes.
+- **Easy Installation**: Self-configuring TinyMCE settings via a setuphandler, including automatic toolbar registration.
+- **Clean Uninstall**: Complete uninstall profile that reverts all registry and TinyMCE changes.
 
 ## Installation
 
