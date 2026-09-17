@@ -1,10 +1,7 @@
-from collective.tinymceplugins.icons import PACKAGE_NAME
 from plone.base.interfaces.controlpanel import IFilterSchema
 from plone.base.interfaces.controlpanel import ITinyMCESchema
 from plone.registry.interfaces import IRegistry
 from zope.component import getUtility
-
-import json
 
 
 class TestRegistry:

@@ -1,5 +1,4 @@
 from collective.tinymceplugins.icons.filters import IconFilter
-from zope.component import getMultiAdapter
 from zope.interface import implementer
 
 
@@ -34,9 +33,9 @@ class TestFilters:
             MockResolverAdapter, (Interface, Interface), Interface, name="iconresolver"
         )
 
-        filter = IconFilter(portal, request)
+        my_filter = IconFilter(portal, request)
         data = '<p>Icon: <img class="plone-icon-placeholder" src="@@iconresolver/home"></p>'
-        result = filter(data)
+        result = my_filter(data)
 
         assert '<svg class="icon-home">' in result
         # BeautifulSoup might normalize the output (e.g. adding closing tags)
@@ -44,7 +43,7 @@ class TestFilters:
         assert "<img" not in result
 
     def test_icon_filter_no_placeholder(self, portal, request):
-        filter = IconFilter(portal, request)
+        my_filter = IconFilter(portal, request)
         data = "<p>No icon here</p>"
-        result = filter(data)
+        result = my_filter(data)
         assert result == data

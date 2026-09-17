@@ -4,8 +4,6 @@ from plone.registry.interfaces import IRegistry
 from zope.component import getUtility
 from zope.interface import implementer
 
-import json
-
 
 @implementer(INonInstallable)
 class HiddenProfiles:
