@@ -10,6 +10,7 @@
       description="Package to configure a new collective.tinymceplugins.icons site"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       directory="profiles/default"
+      post_handler=".setuphandlers.post_install"
       />
 
   <genericsetup:registerProfile
@@ -18,6 +19,7 @@
       description="Uninstall collective.tinymceplugins.icons setup."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       directory="profiles/uninstall"
+      post_handler=".setuphandlers.post_uninstall"
       />
 
   <!-- Hide Uninstall Profile-->

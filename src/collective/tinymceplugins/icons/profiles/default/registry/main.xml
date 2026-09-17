@@ -3,6 +3,60 @@
           i18n:domain="collective.tinymceplugins.icons"
 >
 
-  <!-- -*- extra stuff goes here -*- -->
+  <!-- Bundle registration -->
+  <records interface="Products.CMFPlone.interfaces.IBundleRegistry"
+           prefix="plone.bundles/collective-tinymceplugins-icons"
+  >
+    <value key="enabled">True</value>
+    <value key="jscompilation">++plone++collective.tinymceplugins.icons/plugin.js</value>
+    <value key="depends">plone</value>
+    <value key="load_async">True</value>
+    <value key="load_defer">False</value>
+    <value key="expression" />
+  </records>
+
+  <!-- HTML Filter settings to allow SVGs -->
+  <record name="plone.valid_tags" interface="plone.base.interfaces.controlpanel.IFilterSchema" field="valid_tags">
+    <value purge="False">
+      <element>svg</element>
+      <element>g</element>
+      <element>path</element>
+      <element>rect</element>
+      <element>circle</element>
+      <element>ellipse</element>
+      <element>line</element>
+      <element>polyline</element>
+      <element>polygon</element>
+      <element>defs</element>
+      <element>symbol</element>
+      <element>use</element>
+    </value>
+  </record>
+
+  <record name="plone.custom_attributes" interface="plone.base.interfaces.controlpanel.IFilterSchema" field="custom_attributes">
+    <value purge="False">
+      <element>viewbox</element>
+      <element>xmlns</element>
+      <element>d</element>
+      <element>fill</element>
+      <element>stroke</element>
+      <element>stroke-width</element>
+      <element>points</element>
+      <element>x</element>
+      <element>y</element>
+      <element>width</element>
+      <element>height</element>
+      <element>cx</element>
+      <element>cy</element>
+      <element>r</element>
+      <element>rx</element>
+      <element>ry</element>
+      <element>x1</element>
+      <element>y1</element>
+      <element>x2</element>
+      <element>y2</element>
+      <element>transform</element>
+    </value>
+  </record>
 
 </registry>

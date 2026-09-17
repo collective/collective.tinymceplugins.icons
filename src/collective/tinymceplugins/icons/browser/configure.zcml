@@ -22,4 +22,12 @@
       type="plone"
       />
 
+  <browser:view
+      for="*"
+      name="tinymce-icons-json"
+      class=".icons.IconsJsonView"
+      permission="zope2.View"
+      layer="collective.tinymceplugins.icons.interfaces.IBrowserLayer"
+      />
+
 </configure>

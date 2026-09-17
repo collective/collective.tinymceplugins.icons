@@ -21,6 +21,15 @@
   <include package=".vocabularies" />
   <include package=".browser" />
 
+  <adapter
+      factory=".filters.IconFilter"
+      provides="plone.outputfilters.interfaces.IFilter"
+      for="*
+           *"
+      name="icon_filter"
+      />
+
+
   <!-- -*- extra stuff goes here -*- -->
 
 </configure>
