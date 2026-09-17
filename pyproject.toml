@@ -4,20 +4,12 @@ dynamic = ["version", "readme"]
 description = "A TinyMCE plugin that lets the end-user insert icons registered in Plone as part of the text"
 license = "GPL-2.0-only"
 requires-python = ">=3.10"
-authors = [
-    { name = "Mikel Larreategi", email = "mlarreategi@codesyntax.com" },
-]
-keywords = [
-    "CMS",
-    "Plone",
-    "Python",
-]
+authors = [{ name = "Mikel Larreategi", email = "mlarreategi@codesyntax.com" }]
+keywords = ["CMS", "Plone", "Python"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Environment :: Web Environment",
     "Framework :: Plone",
-    "Framework :: Plone :: 6.0",
-    "Framework :: Plone :: 6.1",
     "Framework :: Plone :: 6.2",
     "Framework :: Plone :: Addon",
     "Operating System :: OS Independent",
@@ -26,19 +18,16 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
 ]
-dependencies = [
-    "Products.CMFPlone",
-    "plone.api",
-    "beautifulsoup4",
-    "z3c.jbot",
-]
+dependencies = ["Products.CMFPlone", "plone.api", "beautifulsoup4"]
 
 [project.optional-dependencies]
 test = [
     "horse-with-no-namespace",
     "plone.app.testing",
-    "plone.classicui","plone.restapi[test]",
+    "plone.classicui",
+    "plone.restapi[test]",
     "pytest",
     "pytest-cov",
     "pytest-plone>=1.0.0a2",
@@ -73,9 +62,7 @@ build-backend = "hatchling.build"
 strict-naming = true
 
 [tool.hatch.build.targets.sdist]
-exclude = [
-  "/.github",
-]
+exclude = ["/.github"]
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/collective"]
@@ -153,7 +140,8 @@ lint.select = [
     # mccabe
     "C90",
     # pycodestyle
-    "E", "W",
+    "E",
+    "W",
     # pyflakes
     "F",
     # pygrep-hooks
@@ -190,9 +178,7 @@ testpaths = ["tests"]
 source_pkgs = ["collective.tinymceplugins.icons", "tests"]
 branch = true
 parallel = true
-omit = [
-  "src/collective/tinymceplugins/icons/locales/*.py",
-]
+omit = ["src/collective/tinymceplugins/icons/locales/*.py"]
 
 [tool.zest-releaser]
 python-file-with-version = "src/collective/tinymceplugins/icons/__init__.py"
